@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.global-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.8px;
+    color: #19182580;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-container{
+    display: flex;
+    margin: 0 30px;
+    margin-bottom: 64px;
+    padding: 32px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 64px;
+}
+
+.login-btn {
+    padding: 16px 32px 16px 32px;
+    border-radius: 0;
+    color: #222831;
+}
+
+.signup-btn {
+    padding: 16px 32px 16px 32px;
+    border-radius: 100px;
+    background-color: #5D50C6;
+    color: white;
+}
