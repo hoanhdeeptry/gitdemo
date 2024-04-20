@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+.global-container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
 .global-text {
     font-family: 'Poppins';
     font-size: 14px;
@@ -75,8 +80,6 @@ h3 {
 
 .hero-section {
     display: flex;
-    max-width: 1290px;
-    margin: 0 auto;
     padding-top: 120px;
 }
 
@@ -150,4 +153,11 @@ img {
 }
 .hightlight-text {
     color: #F85E9F;
+}
+
+/* Brands */
+.brand-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 64px 0;
 }
