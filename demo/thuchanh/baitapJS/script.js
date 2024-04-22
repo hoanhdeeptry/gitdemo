@@ -6,3 +6,5 @@ console.log( `chu vu hinh chu nhat la ${areaValue}` );
 
 const perimeterValue = w * h;
 console.log( `dien tich hinh chu nhat la ${perimeterValue}` );
+
+
