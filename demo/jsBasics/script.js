@@ -1,13 +1,15 @@
 // Khai bao bien
-let fullName = 'Diep Hoang Anh';
-let age = 26;
+
+    let fullName = 'Diep Hoang Anh';
+    let age = 26;
 
 // Ham Built-in
-alert(fullName);
-alert(age);
 
-console.log(fullName);
-console.log(age);
+    alert(fullName);
+    alert(age);
 
-confirm('Xac nhan ban du tuoi!');
-prompt('Nhap do tuoi:');
+    console.log(fullName);
+    console.log(age);
+
+    confirm('Xac nhan ban du tuoi!');
+
