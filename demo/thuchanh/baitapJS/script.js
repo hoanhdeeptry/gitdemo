@@ -74,6 +74,7 @@ function convertDecimalToBinary(decimalNumber) {
     } 
 } 
   
-const num = prompt('nhap so:'); 
+const num = prompt('number:'); 
 const result = convertDecimalToBinary(num); 
 console.log(result);
+alert(`to Binary is: ${result}`);
