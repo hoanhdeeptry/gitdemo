@@ -27,5 +27,35 @@
 // const c = Math.pow(a,b);
 // alert(`ket qua la: ${c}`);
 
+//1
+// let sum = 0
+// for (let i = 0; i < 100; i++) {
+// 	sum += i
+// }
+// console.log(sum)
 
-// Bai 4
+//2
+// for ( let i = 0; i < 1000 ; i++) {
+//     if (i % 3 == 0 && i % 5 == 0) { 
+//           console.log(i)
+//     }
+// }
+
+//3 
+// let a = +prompt('nhap so:')
+// if(!isNaN(a)){
+//     let b = 1;
+//     for (let index = 1; index <= a; index++) {
+//         b *= index;
+//     }
+//     console.log(b);
+// } else {
+//     console.log('f5')
+// }
+
+// 4
+for (let a = 2; a <= 9; a++) {
+  for (let x = 0; x <= 10; x++) {
+    console.log(`${a} * ${x} = ${a * x}`);
+  }
+}
