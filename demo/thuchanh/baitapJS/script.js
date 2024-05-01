@@ -54,8 +54,26 @@
 // }
 
 // 4
-for (let a = 2; a <= 9; a++) {
-  for (let x = 0; x <= 10; x++) {
-    console.log(`${a} * ${x} = ${a * x}`);
-  }
-}
+// for (let a = 2; a <= 9; a++) {
+//   for (let x = 0; x <= 10; x++) {
+//     console.log(`${a} * ${x} = ${a * x}`);
+//   }
+// }
+
+//5
+function convertDecimalToBinary(decimalNumber) { 
+    if (decimalNumber === 0) { 
+        // Base case: Return "0" if the number is 0 
+        return "0"; 
+    } else { 
+        // Recursive case: Divide the number by 2,  
+        //append the remainder to the result of the recursive call 
+        return convertDecimalToBinary( 
+            Math.floor(decimalNumber / 2)) + (decimalNumber % 2); 
+  
+    } 
+} 
+  
+const num = prompt('nhap so:'); 
+const result = convertDecimalToBinary(num); 
+console.log(result);
