@@ -42,7 +42,7 @@
 // }
 
 //3 
-// let a = +prompt('nhap so:')
+// let a = prompt('nhap so:')
 // if(!isNaN(a)){
 //     let b = 1;
 //     for (let index = 1; index <= a; index++) {
@@ -50,7 +50,7 @@
 //     }
 //     console.log(b);
 // } else {
-//     console.log('f5')
+//     console.log('f5 de nhap lai')
 // }
 
 // 4
@@ -63,11 +63,8 @@
 //5
 function convertDecimalToBinary(decimalNumber) { 
     if (decimalNumber === 0) { 
-        // Base case: Return "0" if the number is 0 
         return "0"; 
     } else { 
-        // Recursive case: Divide the number by 2,  
-        //append the remainder to the result of the recursive call 
         return convertDecimalToBinary( 
             Math.floor(decimalNumber / 2)) + (decimalNumber % 2); 
   
@@ -78,3 +75,5 @@ const num = prompt('number:');
 const result = convertDecimalToBinary(num); 
 console.log(result);
 alert(`to Binary is: ${result}`);
+
+//6
