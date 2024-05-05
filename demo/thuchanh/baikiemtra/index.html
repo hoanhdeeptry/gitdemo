@@ -1,62 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" class="" />
     <title>Document</title>
-</head>
-
-<body>
-    <div class="container">
-        <div class="heading">
-            HUHU
+  </head>
+  <body>
+    <div class="body">
+      <div class="nav-menu">
+        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-credit-card"></i>
+        <i class="fa-solid fa-tv"></i>
+        <i class="fa-solid fa-list-check"></i>
+        <i class="fa-solid fa-gear"></i>
+      </div>
+      <div class="content">
+        <div class="logo">
+          <h1>HUHU</h1>
         </div>
-        <div class="nav">
-            <i class="fa-solid fa-user"></i>
-            <i class="fa-solid fa-credit-card"></i>
-            <i class="fa-solid fa-tv"></i>
-            <i class="fa-solid fa-list-check"></i>
-            <i class="fa-solid fa-gear"></i>
-        </div>
 
-        <form action="#">
-            <div class="form-row">
-                <div class="input-data">
-                    <div class="header">Full name</div>
-                    <input type="text" required>
-                    <div class="underline"></div>
-                    <label>First Name</label>
-                </div>
-                <div class="input-data">
-                    <div class="header">Birthday</div>
-                    <input type="text" required>
-                    <div class="underline"></div>
-                    <label>Last Name</label>
-                </div>
-                <div class="input-data">
-                    <div class="header">Birthday</div>
-                    <input type="text" required>
-                    <div class="underline"></div>
-                    <label>Email Address</label>
-                </div>
-                <div class="input-data">
-                    <input type="text" required>
-                    <div class="underline"></div>
-                    <label>Website Name</label>
-                </div>
+        <div class="info-content">
+          <h2>Personal Info</h2>
+          <div class="row">
+            <div class="label">Full name</div>
+            <div class="">
+              <input type="text" name="name" id="fullname">
+              <button type="button">UPDATE</button>
             </div>
-        </form>
+            <div class="line"></div>
+          </div>
+          <div class="row">
+            <div class="label">Birthday</div>
+            <div class="">
+                <input type="text" name="name" id="fullname">
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="row">
+            <div class="label">Gender</div>
+            <select id="country" name="country">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+            </select>
+            <div class="line"></div>
+          </div>
+          <div class="row">
+            <div class="label">Email</div>
+            <div class="">
+              <input type="email" name="" id="">
+              <button type="button">UPDATE</button>
+            </div>
+            <div class="line"></div>
+          </div>
+          <div class="row">
+            <div class="label">Password</div>
+            <div class="">
+                <input type="password" placeholder="Enter Password" name="psw" required>
+                <button type="button">UPDATE</button>
+            </div>
+            <div class="line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="" class=""><h2>Get $10</h2></a>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
