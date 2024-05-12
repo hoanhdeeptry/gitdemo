@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <h1>Javascript</h1>
-    <script src="./script.js"></script>
-</body>
+  </head>
+  <body>
+    <form action="">
+      <input id="name" type="text" />
+      <input id="password" type="text" />
+    </form>
+    <div id="container">
+      <h1></h1>
+    </div>
+
+    <button id="btn">Click</button>
+    <script>
+      //   class SinhVien {
+      //     constructor(ho, ten) {
+      //       this.nameSv = ten;
+      //       this.hoSv = ho;
+      //     }
+
+      //     getFullName() {
+      //       return `Ten day du ${this.hoSv} ${this.nameSv}`;
+      //     }
+      //   }
+
+      //   let b = new SinhVien("le", "Quang");
+
+      //   console.log(b.getFullName());
+
+      //   let obj = {
+      //     getName: function () {
+      //       console.log("day la method");
+      //     },
+      //   };
+
+      //   function getTitle() {
+      //     console.log("day la function");
+      //   }
+
+      //   obj.getName();
+      //   getTitle();
+
+      const users = [
+        {
+          name: "user1",
+          pasword: "123456",
+        },
+        {
+          name: "user2",
+          pasword: "123456",
+        },
+        {
+          name: "user3",
+          pasword: "123456",
+        },
+      ];
+
+      const usersLocal = localStorage.setItem("users", JSON.stringify(users));
+      const listUser = JSON.parse(localStorage.getItem("users"));
+
+      const eId = document.querySelector("#container");
+      const eBtn = document.querySelector("#btn");
+      const eName = document.querySelector("#name");
+      const ePass = document.querySelector("#password");
+      const eH1 = document.querySelector("h1");
+
+      const text = localStorage.getItem("isLogin") || false;
+      const nameUser = localStorage.getItem("username") || "";
+      if (isLogin && nameUser) {
+        eH1.textContent = eName.value;
+      } else {
+        eH1.textContent = " Chua co login";
+      }
+      eBtn.addEventListener("click", onClickBtn);
+      function onClickBtn(e) {
+        for (let index = 0; index < listUser.length; index++) {
+          const user = listUser[index];
+          console.log(eName.value, ePass.value);
+          if (user.name == eName.value && user.pasword == ePass.value) {
+            localStorage.setItem("isLogin", true);
+            localStorage.setItem("username", eName.value);
+            eH1.textContent = e.name.value
+          }
+        }
+      }
+    </script>
+  </body>
 </html>
